@@ -7,7 +7,7 @@ from trainer import Trainer, OrthReguTrainer, AdversarialTrainer, AdversarialOrt
 from dataset import CIFAR10, CIFAR100
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--model', type=str, default='resnet',
+parser.add_argument('--model', type=str, default='wideresnet',
                     help='name of CNN model. Choices: resnet, wideresnet, resnext')
 parser.add_argument('--dataset', type=str, default='cifar10', help='cifar10 | cifar100')
 parser.add_argument('--data', type=str, default='data', help='path of dataset')
